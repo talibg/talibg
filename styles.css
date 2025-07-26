@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+    --dark: #0d0a0b;
+    --brand: #caa52b;
+    --accent: #65581b;
+    --muted: #8b939c;
+    --light: #fafafa;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    font-optical-sizing: auto;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--light);
+    background-color: var(--dark);
+    max-width: 960px;
+    margin: 3rem auto 1rem;
+    padding: 0 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 200ms ease-in-out;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a svg {
+    stroke: var(--muted);
+    transition: stroke 200ms ease-in-out;
+}
+
+a:hover svg {
+    stroke: var(--accent);
+}
+
+.main-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    justify-content: space-between;
+}
+.main-header .identity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.main-header .logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.main-header nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+section {
+    margin-top: 2.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+article {
+    margin-bottom: 1.5rem;
+}
+
+article h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+article p {
+    margin: 0;
+}
+
+article header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+article header h3::after {
+    content: '.';
+    font-weight: normal;
+    color: var(--accent);
+    margin-left: 0.5rem;
+}
+
+.dates {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.description {
+    color: var(--muted);
+}
+
+.description::before,
+.dates::before {
+    content: '.';
+    font-weight: normal;
+    color: var(--accent);
+}
+.description::before {
+    margin-right: 0.5rem;
+}
