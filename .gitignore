@@ -1,0 +1,28 @@
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Node/npm-related (if you ever add tooling)
+node_modules/
+dist/
+build/
+
+# Editor/IDE settings
+.vscode/
+*.code-workspace
+.idea/
+
+# Logs
+*.log
+
+# Environment variables (if added in future)
+.env
+.env.local
+
+# SSH keys (important if you generate any locally)
+*.pem
+*.key
+*.pub
+id_ed25519
+id_ed25519.pub
+
