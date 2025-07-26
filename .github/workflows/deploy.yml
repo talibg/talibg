@@ -19,7 +19,7 @@ jobs:
                   ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
             - name: Add known hosts
-              run: ssh-keyscan -H talibg.com >> ~/.ssh/known_hosts
+              run: ssh-keyscan -H 46.101.28.106 >> ~/.ssh/known_hosts
 
             - name: Deploy files with rsync
-              run: rsync -avz --delete ./ root@talibg.com:/var/www/talibg.com/
+              run: rsync -avz --delete ./ root@46.101.28.106:/var/www/talibg.com/
