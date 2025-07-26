@@ -19,6 +19,7 @@ jobs:
                   echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
                   chmod 600 ~/.ssh/id_ed25519
                   ssh-keyscan -H talibg.com >> ~/.ssh/known_hosts
+              shell: bash
 
             - name: Sync files via rsync
               run: |
