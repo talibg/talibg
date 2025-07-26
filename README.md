@@ -24,6 +24,7 @@
 ### talibg
 
 A minimalist dark themed portfolio  
+[talibg.com](https://talibg.com)
 [GitHub Repo](https://github.com/talibg/talibg)
 
 ### **\*\*\*\***
