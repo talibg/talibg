@@ -13,15 +13,13 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
-            - name: Set up SSH key
-              run: |
-                  mkdir -p ~/.ssh
-                  echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_github_actions
-                  chmod 600 ~/.ssh/id_github_actions
-                  ssh-keyscan -H talibg.com >> ~/.ssh/known_hosts
+            - name: Install SSH key
+              uses: webfactory/ssh-agent@v0.9.0
+              with:
+                  ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+
+            - name: Add known hosts
+              run: ssh-keyscan -H talibg.com >> ~/.ssh/known_hosts
 
             - name: Deploy files with rsync
-              run: |
-                  rsync -avz \
-                    -e "ssh -i ~/.ssh/id_github_actions -o StrictHostKeyChecking=yes" \
-                    index.html styles.css root@talibg.com:/var/www/talibg.com/
+              run: rsync -avz --delete ./ root@talibg.com:/var/www/talibg.com/
