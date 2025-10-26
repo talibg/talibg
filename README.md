@@ -1,32 +1,23 @@
 # talibg
 
-[GitHub](https://github.com/talibg)  
-[LinkedIn](https://www.linkedin/in/talibguyani)
+[github](https://github.com/talibg) · [linkedin](https://www.linkedin.com/in/talibguyani)
 
----
+## experience
 
-## Experience
+- **scout guarantee ltd**  
+  Software Engineer • contract • remote  
+  04/2025 – 09/2025
 
-### real world health ltd
+- **real world health ltd**  
+  Software Engineer • permenant • remote  
+  07/2022 – 03/2025
 
-**Senior Software Engineer**  
-📅 July 2022 – March 2025
-
-### xanda ltd
-
-**Senior Software Engineer**  
-📅 March 2015 – March 2022
-
----
+- **xanda ltd**  
+  Software Engineer • permenant • remote  
+  03/2015 – 03/2022
 
 ## Projects
 
-### talibg
-
-A minimalist dark themed portfolio  
-[talibg.com](https://talibg.com)
-[GitHub Repo](https://github.com/talibg/talibg)
-
-### **\*\*\*\***
-
-Currently in stealth mode
+- **[talibg](https://talibg.com)** — a minimalist dark themed portfolio (codename [gotham](https://github.com/talibg/gotham))
+- **[typesnip](https://typesnip.com)** — a private, local TypeScript snippet manager (codename [asgard](https://github.com/talibg/asgard))
+- ************ — currently in stealth mode
